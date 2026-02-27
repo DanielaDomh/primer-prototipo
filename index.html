@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>Video Sorpresa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <button id="revealBtn" type="button">Primer prototipo</button>
+
+    <section id="videoWrapper" class="video-wrapper hidden" aria-live="polite">
+      <iframe
+        id="ytFrame"
+        title="Video sorpresa"
+        allow="autoplay; encrypted-media; picture-in-picture"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin"
+      ></iframe>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
